@@ -1,7 +1,9 @@
 a:link {
   text-decoration:  none;
 } 
-
+b {
+    color: black;
+}
 .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -17,6 +19,12 @@ a:link {
 .black-bar {
     background-color: black; 
     width: 100%;
+}
+.overrride-bottom-padding {
+    padding-bottom: 0px !important;
+}
+.tiny-text {
+    font-size: 10px;
 }
 @keyframes blink {
     0% { opacity: 1; }

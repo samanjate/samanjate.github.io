@@ -146,44 +146,63 @@ body, html {
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+   <div>
+		<a class="w3-large w3-hover-text-black">PLAGIARISM DETECTOR</a>
+	  	<p><i>An application that measures the degree of similarity between two programs written in C.<span class="w3-right">Jan 2018-Present</span></i></p>
+  </div>
+
+  <div class="w3-row">
+  	<div class="w3-col m6 w3-padding-small">
+    	<ul>
+    		<li>A <b>Java</b> based desktop application with <b>MySQL</b> connection on the back-end to persist user data.</li>
+    		<li>The program takes in multiple C program files and spits out a score that represents the degree of similarity between pairs of program files.</li>
+    		<li>The algorithm used generated an AST for each program and computes a hash value for each AST and then compare them against each other.</li>
+    	</ul>
     </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    <div class="w3-col w3-center m6 w3-hide-small w3-padding-small">
+    	<a class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">DOWNLOAD<br><span class="tiny-text">(Available Soon)</span></a>
     </div>
   </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+   <div class="w3-padding-64 overrride-bottom-padding">
+		<a class="w3-large w3-hover-text-black">PACMAN</a>
+	  	<p><i>This project explores different search algorithms to automatically solve a pacman game optimally.<span class="w3-right">Jan 2018-Present</span></i></p>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col w3-center m6 w3-hide-small w3-padding-small">
+    	<img width="50%" src="https://ucmercedgamestudies.files.wordpress.com/2015/09/pacman-2.gif"></img>
+    </div>
+    <div class="w3-col m6 w3-padding-small">
+    	<ul>
+    		<li>A <b>Python</b> based program that runs different search algorithms on a given state of a pacman game.</li>
+    		<li>Compares the optimality of different search algorithms like BFS, DFS, UCF, and A* Heuristic search for different cases.</li>
+    	</ul>
+    </div>
+  </div>
+
+  <div class="w3-padding-64 overrride-bottom-padding">
+		<a class="w3-large w3-hover-text-black" href="https://sood-samanjate-webdev.herokuapp.com/project/index.html" target="_blank">GO MOVIES</a>
+	  	<p><i>A website where users can browse the latest movies, TV shows, and can also rate/review them. <span class="w3-right">Jan-Apr 2017</span></i></p>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-padding-small">
+    	<ul>
+    		<li>This website incorporates the use of <b>AngularJS</b> on the front-end and <b>NodeJS</b> and <b>MongoDB</b> at the back-end.</li>
+    		<li>It uses the TMDb <b>REST</b>ful APIs to pull all the movie, TV shows, and celebrity related data, and hence is up-to-date.</li>
+    		<li>Users can create accounts and rate/review their favourite shows and manage their personalized profiles.</li>
+    		<li>The website has a sophisticated system of averaging out show ratings and displaying reviews.</li>
+    	</ul>
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    <div class="w3-col m6 w3-right w3-hide-small w3-padding-small">
+    	<iframe width="90%" height="252" src="https://www.youtube.com/embed/I8745DNFkuk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
+  </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
+  <div class="w3-row-padding w3-center">
     <a href="resume/Resume.pdf" class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" download="Samanjate_Sood_Resume">DOWNLOAD RESUME</a>
   </div>
 </div>
@@ -243,11 +262,11 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" id="bottom">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/samanjate" class="fa fa-facebook-official w3-hover-opacity"></a>
-    <a href="https://www.instagram.com/saman.sood/" class="fa fa-instagram w3-hover-opacity"></a>
-    <a href="https://github.com/samanjate" class="fa fa-github w3-hover-opacity"></a>
-    <a href="http://samanjate.tumblr.com/" class="fa fa-tumblr-square w3-hover-opacity"></a>
-    <a href="https://www.linkedin.com/in/samanjate/" class="fa fa-linkedin w3-hover-opacity"></a>
+    <a href="https://www.facebook.com/samanjate" class="fa fa-facebook-official w3-hover-opacity" target="_blank"></a>
+    <a href="https://www.instagram.com/saman.sood/" class="fa fa-instagram w3-hover-opacity" target="_blank"></a>
+    <a href="https://github.com/samanjate" class="fa fa-github w3-hover-opacity" target="_blank"></a>
+    <a href="http://samanjate.tumblr.com/" class="fa fa-tumblr-square w3-hover-opacity" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/samanjate/" class="fa fa-linkedin w3-hover-opacity" target="_blank"></a>
   </div>
   <p>Made with <i class="fa fa-heart"></i></p>
 </footer>
@@ -297,7 +316,7 @@ function toggleFunction() {
     }
 }
 
-	
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
