@@ -66,7 +66,7 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-briefcase"></i> EXPERIENCE</a>
     <a href="#bottom" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-arrow-down"></i>
     </a>
@@ -76,8 +76,8 @@ body, html {
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+    <a href="#bottom" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
 
@@ -103,17 +103,20 @@ body, html {
       <p>I am interested in working as a Software Engineer/Full Stack Web Developer. In the past, I have worked with complex applications built on different technology stacks and been exposed to different software development environments. This has helped me strenghten my system design concepts, and I am able to quickly adapt and work efficiently under any circumstances in any environment. I enjoy learning new technologies and always like to hone my skills as a Software Engineer. I am currently looking for Internship/Full-Time opportunities in these areas and would love to hear about roles that fit my profile!</p>
     </div>
   </div>
-  <p class="w3-wide"><i class="fa fa-cogs"></i>Software Engineering</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%"></div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Development</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%"></div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-flask"></i>Algorithms</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%"></div>
+  <div class="w3-padding-64 overrride-bottom-padding">
+	  <h3 class="w3-center">SKILLS</h3>
+	  <p class="w3-wide"><i class="fa fa-cogs"></i>Software Engineering</p>
+	  <div class="w3-light-grey">
+	    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%"></div>
+	  </div>
+	  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Development</p>
+	  <div class="w3-light-grey">
+	    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%"></div>
+	  </div>
+	  <p class="w3-wide"><i class="fa fa-flask"></i>Algorithms</p>
+	  <div class="w3-light-grey">
+	    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%"></div>
+	  </div>
   </div>
   <div class="w3-center">
     <a href="resume/Resume.pdf" class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" download="Samanjate_Sood_Resume">DOWNLOAD RESUME</a>
@@ -255,49 +258,31 @@ body, html {
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+     <span class="w3-xxlarge w3-text-white w3-wide">EXPERIENCE</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Boston, MA<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (781) 952-0303<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: sood.s@husky.neu.edu<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" id="bottom">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
+  <div class="w3-section">
+  	<div class="w3-row w3-center">
+  		<div class="w3-col m4 w3-padding-small"></div>
+    	<div class="w3-col m4 w3-padding-small">
+    		<div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:300px;"></div>
+    	</div>
+    	<div class="w3-col m4 w3-padding-small"></div>
+    </div>
+  </div>
+  <div class="w3-section">
+    <p>
+    	<i class="fa fa-map-marker fa-fw"></i> Boston, MA<br>
+    	<i class="fa fa-phone fa-fw"></i> +1 (781) 952-0303<br>
+        <a href="mailto:sood.s@husky.neu.edu?Subject=Hello"><i class="fa fa-envelope fa-fw w3-hover-opacity"></i></a> sood.s@husky.neu.edu<br>
+    </p>
+  </div>
+  <div class="w3-xlarge w3-section w3-widest">
     <a href="https://www.facebook.com/samanjate" class="fa fa-facebook-official w3-hover-opacity" target="_blank"></a>
     <a href="https://www.instagram.com/saman.sood/" class="fa fa-instagram w3-hover-opacity" target="_blank"></a>
     <a href="https://github.com/samanjate" class="fa fa-github w3-hover-opacity" target="_blank"></a>
@@ -356,9 +341,5 @@ function toggleFunction() {
 </script>
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCUnhTYKHuF-TXqSO_7waj6XeMwCPBeNs&callback=myMap"
   type="text/javascript"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 </body>
 </html>
