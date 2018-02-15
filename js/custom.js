@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   Typed.new('.typewriter', {
     strings: ["Samanjate Sood.",
-              "a Computer Science graduate student at Northeastern University.",
-              "specializing in Software Engineering and Database Management.",
-              "also interested in Artifical Intelligence and Web Development.",
+              "a CS grad at NEU.",
+              "specializing in Software Eng and DB Mgmt.",
+              "also interested in AI and Web Dev.",
               "a pretty good photographer too!"],
     startDelay: 2000,
     typeSpeed: 15,
