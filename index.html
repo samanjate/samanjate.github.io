@@ -4,10 +4,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="js/typed.js"></script>
    <script src="js/custom.js"></script>
+   <script src="js/typed.custom.js"></script>
    <link rel="stylesheet" href="css/w3.css">
    <link rel="stylesheet" href="css/custom.css">
+   <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="icon" href="https://www.shareicon.net/data/512x512/2016/07/08/117253_development_512x512.png">
@@ -49,6 +50,40 @@
       }
       }
    </style>
+   <script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["Hello! I'm Samanjate Sood.", "I'm a CS grad at NEU.", "I'm specializing in Software Engg and Db Mgnmt.", "I'm also interested in AI and Web Dev.", "Hello! I'm Samanjate Sood."],
+            typeSpeed: 30,
+      callback: function(){
+        shift();
+      }
+        });
+
+    });
+  function shift(){
+      $(".bash-head-wrap").addClass("bash-shift-text");
+      terminalHeight();
+  }
+
+  function terminalHeight(){
+      var termHeight = $(".bash-terminal-height");
+      var value = termHeight.text();
+      value = parseInt(value);
+      setTimeout(function(){
+          if (value > 10){
+              value = value-1;
+              this.txtValue = value.toString();
+              termHeight.text(this.txtValue);
+              self.terminalHeight();
+          }
+          else{
+              clearTimeout();
+          }
+      }, 10);
+  }
+    </script>
    <body>
       <!-- Navbar (sit on top) -->
       <div class="w3-top">
@@ -74,8 +109,16 @@
       </div>
       <!-- First Parallax Image with Logo Text -->
       <div class="bgimg-1 w3-opacity-min" id="home">
-         <div style="background-color: black; width: 100%" 
-            class="w3-display-middle responsive-text w3-large w3-text-white w3-center">Hello! I'm <span class="typewriter"></span>
+         <div class="bash-header">
+          <div class="bash-head-wrap">
+              <div class="bash-text-editor-wrap" style="margin-top: 150px">
+                  <div class="bash-title-bar"><span class="bash-title">samansood &mdash; bash &mdash; 80x<span class="bash-terminal-height">24</span></span></div>
+                  <div class="bash-text-body">
+                      $ <span id="typed"></span>
+                  </div>
+              </div>
+              <span class="bash-tagline">Thanks for visiting my website.</span>
+            </div>
          </div>
          <div class="w3-display-bottomleft w3-padding-16 w3-margin-left">
          	<a href="https://www.linkedin.com/in/samanjate/" target="_blank"><i class="w3-linkedin-blue w3-round w3-xxxlarge w3-padding-tiny fa fa-linkedin"></i></a>
