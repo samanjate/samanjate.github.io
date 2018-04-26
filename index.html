@@ -4,14 +4,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="js/custom.js"></script>
    <script src="js/typed.custom.js"></script>
    <link rel="stylesheet" href="css/w3.css">
    <link rel="stylesheet" href="css/custom.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="icon" href="https://www.shareicon.net/data/512x512/2016/07/08/117253_development_512x512.png">
+   <link rel="icon" href="https://png.icons8.com/office/40/000000/iron-man.png">
    <style>
       body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
       body, html {
@@ -51,39 +50,39 @@
       }
    </style>
    <script>
-    $(function(){
-
-        $("#typed").typed({
-            strings: ["Hello! I'm Samanjate Sood.", "I'm a CS grad at NEU.", "I'm specializing in Software Engg and Db Mgnmt.", "I'm also interested in AI and Web Dev.", "Hello! I'm Samanjate Sood."],
-            typeSpeed: 30,
-      callback: function(){
-        shift();
+      $(function(){
+      
+          $("#typed").typed({
+              strings: ["Hello! I'm Samanjate Sood.", "I'm a CS grad at NEU.", "I'm specializing in Software Engg and Db Mgnmt.", "I'm also interested in AI and Web Dev.", "Hello! I'm Samanjate Sood."],
+              typeSpeed: 30,
+        callback: function(){
+          shift();
+        }
+          });
+      
+      });
+      function shift(){
+        $(".bash-head-wrap").addClass("bash-shift-text");
+        terminalHeight();
       }
-        });
-
-    });
-  function shift(){
-      $(".bash-head-wrap").addClass("bash-shift-text");
-      terminalHeight();
-  }
-
-  function terminalHeight(){
-      var termHeight = $(".bash-terminal-height");
-      var value = termHeight.text();
-      value = parseInt(value);
-      setTimeout(function(){
-          if (value > 10){
-              value = value-1;
-              this.txtValue = value.toString();
-              termHeight.text(this.txtValue);
-              self.terminalHeight();
-          }
-          else{
-              clearTimeout();
-          }
-      }, 10);
-  }
-    </script>
+      
+      function terminalHeight(){
+        var termHeight = $(".bash-terminal-height");
+        var value = termHeight.text();
+        value = parseInt(value);
+        setTimeout(function(){
+            if (value > 10){
+                value = value-1;
+                this.txtValue = value.toString();
+                termHeight.text(this.txtValue);
+                self.terminalHeight();
+            }
+            else{
+                clearTimeout();
+            }
+        }, 10);
+      }
+   </script>
    <body>
       <!-- Navbar (sit on top) -->
       <div class="w3-top">
@@ -109,19 +108,19 @@
       </div>
       <!-- First Parallax Image with Logo Text -->
       <div class="bgimg-1 w3-opacity-min" id="home">
-         <div class="bash-header">
-          <div class="bash-head-wrap">
-              <div class="bash-text-editor-wrap" style="margin-top: 150px">
+         <div class="w3-display-middle bash-header">
+            <div class="bash-head-wrap">
+               <div class="bash-text-editor-wrap">
                   <div class="bash-title-bar"><span class="bash-title">samansood &mdash; bash &mdash; 80x<span class="bash-terminal-height">24</span></span></div>
                   <div class="bash-text-body">
-                      $ <span id="typed"></span>
+                     $ <span id="typed"></span>
                   </div>
-              </div>
-              <span class="bash-tagline">Thanks for visiting my website.</span>
+               </div>
+               <span class="bash-tagline">Thanks for visiting my website.</span>
             </div>
          </div>
          <div class="w3-display-bottomleft w3-padding-16 w3-margin-left">
-         	<a href="https://www.linkedin.com/in/samanjate/" target="_blank"><i class="w3-linkedin-blue w3-round w3-xxxlarge w3-padding-tiny fa fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/samanjate/" target="_blank"><i class="w3-linkedin-blue w3-round w3-xxxlarge w3-padding-tiny fa fa-linkedin"></i></a>
          </div>
          <div class="w3-display-bottomright w3-padding-16 w3-margin-right">
             <a href="resume/Resume.pdf" class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" download="Samanjate_Sood_Resume">DOWNLOAD RESUME</a>
@@ -130,30 +129,30 @@
       </div>
       <!-- Container (About Section) -->
       <div class="w3-content w3-container w3-padding-64" id="about">
-      	 <div class="w3-row">
-         	<h3 class="w3-center">ABOUT ME</h3>
-         	<div class="w3-col w3-center m6 w3-padding-small">
+         <div class="w3-row">
+            <h3 class="w3-center">ABOUT ME</h3>
+            <div class="w3-col w3-center m6 w3-padding-small">
                <img src="pictures/saman.jpg" class="w3-round w3-image" alt="Photo of Me" width="250" height="157">
             </div>
             <div class="w3-col m6 w3-padding-small w3-hide-small">
                <ul>
-	              <li>I am interested in working as a Software Engineer/Full Stack Web Developer.</li> 
-	              <li>I have worked with complex applications built on different technology stacks and been exposed to different software development environments.</li> 
-	              <li>I can quickly adapt and work efficiently under any circumstances in any environment.</li> 
-	              <li>I enjoy learning new technologies and am always motivated to hone my skills as a Software Engineer.</li>
+                  <li>I am interested in working as a Software Engineer/Full Stack Web Developer.</li>
+                  <li>I have worked with complex applications built on different technology stacks and been exposed to different software development environments.</li>
+                  <li>I can quickly adapt and work efficiently under any circumstances in any environment.</li>
+                  <li>I enjoy learning new technologies and am always motivated to hone my skills as a Software Engineer.</li>
                </ul>
             </div>
          </div>
          <div class="w3-padding-64 overrride-bottom-padding">
-         	<h3 class="w3-center">EDUCATION</h3>
+            <h3 class="w3-center">EDUCATION</h3>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Northeastern_University_seal.svg/1200px-Northeastern_University_seal.svg.png" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
             <a href="http://www.northeastern.edu/" class="w3-large w3-hover-text-black" target="_blank">NORTHEASTERN UNIVERSITY</a><span class="w3-right w3-margin-top w3-hide-small">Boston, MA</span>
          </div>
          <div>
             <p>
-            	<i>Candidate for a Master of Science in Computer Science<span class="w3-right">Jul 2016 - Present</span></i><br>
-                <i>College of Computer &amp; Information Science; <b>GPA: 3.58</b><span class="w3-right">Expected Graduation: Dec 2018</span></i><br>
-                Related Subjects: Algorithms, Foundations of Artificial Intelligence, Information Retrieval, Managing Software Development, Programming Design Paradigm, and Web Development.
+               <i>Candidate for a Master of Science in Computer Science<span class="w3-right">Jul 2016 - Present</span></i><br>
+               <i>College of Computer &amp; Information Science; <b>GPA: 3.58</b><span class="w3-right">Expected Graduation: Dec 2018</span></i><br>
+               Related Subjects: Algorithms, Foundations of Artificial Intelligence, Information Retrieval, Managing Software Development, Programming Design Paradigm, and Web Development.
             </p>
          </div>
          <div class="w3-padding-16 overrride-bottom-padding">
@@ -162,8 +161,8 @@
          </div>
          <div>
             <p>
-            	<i>Bachelor of Engineering in Computer Science &amp; Engineering<span class="w3-right">May 2010 - Jun 2014</span></i><br>
-            	Favourite Subjects: Analysis and Design of Algorithms, Data Structures, Database Management Systems, Object Oriented Programming, Programming Fundamentals, Software Engineering, Software Testing &amp; Quality Assurance, and Web Technologies.
+               <i>Bachelor of Engineering in Computer Science &amp; Engineering<span class="w3-right">May 2010 - Jun 2014</span></i><br>
+               Favourite Subjects: Analysis and Design of Algorithms, Data Structures, Database Management Systems, Object Oriented Programming, Programming Fundamentals, Software Engineering, Software Testing &amp; Quality Assurance, and Web Technologies.
             </p>
          </div>
          <div class="w3-padding-16 overrride-bottom-padding">
@@ -208,24 +207,47 @@
       <!-- Container (Portfolio Section) -->
       <div class="w3-content w3-container w3-padding-64" id="portfolio">
          <div>
-            <a class="w3-large w3-hover-text-black">PLAGIARISM DETECTOR</a>
-            <p><i>An application that measures the degree of similarity between two programs written in C.<span class="w3-right">Jan 2018 - Present</span></i></p>
+            <a class="w3-large">2048 SOLVER</a>&nbsp;&nbsp;<a class="w3-hover-text-black" target="_blank" href="https://twenty48-solver.herokuapp.com/"><i class="fa fa-external-link"></i></a>
+            &nbsp;<a class="w3-hover-text-black" target="_blank" href="https://github.com/samanjate/2048-solver"><i class="w3-large fa fa-github"></i></a>
+            &nbsp;<a class="w3-hover-text-black" target="_blank" href="https://github.com/samanjate/neu/blob/master/CS5100/project/report.pdf"><i class="w3-large fa fa-book"></i></a>
+            <p><i>Artificial Intelligence for solving the popular 2048 strategy game that went viral in 2013.<span class="w3-right">Jan-Apr 2018</span></i></p>
+         </div>
+         <div class="w3-row">
+            <div class="w3-col w3-center m6 w3-hide-small w3-padding-small">
+               <img width="50%" src="http://i.imgur.com/GCXbTTt.gif"></img>
+            </div>
+            <div class="w3-col m6 w3-padding-small">
+               <ul>
+                  <li>Formulated the game as a Search Tree and implemented the <b>Minimax</b> and <b>Expectimax</b> algorithms to search for optimal moves in the state-space.</li>
+                  <li>Designed <b>Heuristics</b> to evaluate leaf nodes where empty cells and higher valued tiles at one corner of the grid were rewarded, whereas non-monotonic states were penalized.</li>
+                  <li>Developed using <b>JavaScript</b>, the alogithms looks six moves ahead from the current game state to find the current best move.</li>
+                  <li>Achieved the <b>4096</b> tile multiple times.</li>
+               </ul>
+            </div>
+         </div>
+         <br/>
+         <div class="w3-padding-64 overrride-bottom-padding">
+            <span class="w3-large">INTEGRITY</span>&nbsp;&nbsp;<a class="w3-hover-text-black" target="_blank" href="https://plagiarism-detector-107.herokuapp.com"><i class="fa fa-external-link"></i></a>
+            &nbsp;<a class="w3-hover-text-black" target="_blank" href="https://github.com/samanjate/plagiarism-detector"><i class="w3-large fa fa-github"></i></a>
+            <p><i>A desktop application that detects cases of plagiarism between two C code submissions.<span class="w3-right">Jan-Apr 2018</span></i></a></p>
          </div>
          <div class="w3-row">
             <div class="w3-col m6 w3-padding-small">
                <ul>
-                  <li>A <b>Java</b> based desktop application with <b>MySQL</b> connection on the back-end to persist user data.</li>
-                  <li>The program takes in multiple C program files and spits out a score that represents the degree of similarity between pairs of program files.</li>
-                  <li>The algorithm used generates an AST for each program. It then computes a hash value for each AST, which is then used to compare against other computed hash values.</li>
+                  <li><b>Evaluates</b> multiple <b>C source code</b> files per submission, the applications spits out a score that represents the degree of similarity between the two submissions.</li>
+                  <li>Compares every file submitted and <b>highlights the similar code</b>.</li>
+                  <li>Implemented <b>Levenshtein Distance</b> and <b>LCS</b> algorithms on the generated AST of two program files.</li>
+                  <li>Assigns weights to each algorithm by fitting a <b>Regression model</b> on MOSS dataset.</li>
+                  <li><b>Tech and Tools</b>: Java, JavaFX, SQLite, Git, Squish, Jenkins, Jira, SonarQube.</li>
                </ul>
             </div>
-            <div class="w3-col w3-center m6 w3-hide-small w3-padding-small">
-               <a href="resources/app.zip" class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" download="Plagiarism_Detector_v0">DOWNLOAD<br><span class="tiny-text">(Available Soon)</span></a>
+            <div class="w3-col m6 w3-right w3-hide-small w3-padding-small">
+               <iframe width="90%" height="252" src="https://www.youtube.com/embed/M_8hgVHPBsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
          </div>
          <div class="w3-padding-64 overrride-bottom-padding">
-            <a class="w3-large w3-hover-text-black">PACMAN</a>
-            <p><i>This project explores different search algorithms to automatically solve a pacman game optimally.<span class="w3-right">Jan 2018 - Present</span></i></p>
+            <a class="w3-large">PACMAN</a>&nbsp;&nbsp;<a class="w3-hover-text-black" target="_blank" href="https://github.com/samanjate/neu/tree/master/CS5100/pacman"><i class="w3-large fa fa-github"></i></a>
+            <p><i>This project explores different search algorithms to automatically solve a pacman game optimally.<span class="w3-right">Jan-Apr 2018</span></i></p>
          </div>
          <div class="w3-row">
             <div class="w3-col w3-center m6 w3-hide-small w3-padding-small">
@@ -239,7 +261,8 @@
             </div>
          </div>
          <div class="w3-padding-64 overrride-bottom-padding">
-            <a class="w3-large w3-hover-text-black" href="https://sood-samanjate-webdev.herokuapp.com/project/index.html" target="_blank">GO MOVIES</a>
+            <a class="w3-large">GO MOVIES</a>&nbsp;&nbsp;<a class="w3-hover-text-black" target="_blank" href="https://go-movies.herokuapp.com"><i class="fa fa-external-link"></i></a>
+            &nbsp;<a class="w3-hover-text-black" target="_blank" href="https://github.com/samanjate/go-movies"><i class="w3-large fa fa-github"></i></a>
             <p><i>A website where users can browse the latest movies, TV shows, and can also rate/review them. <span class="w3-right">Jan-Apr 2017</span></i></p>
          </div>
          <div class="w3-row">
@@ -257,7 +280,7 @@
             </div>
          </div>
          <div class="w3-padding-64 overrride-bottom-padding">
-            <a class="w3-large w3-hover-text-black" href="https://github.com/samanjate/IR-Project" target="_blank">INFORMATION RETRIEVAL SYSTEMS</a>
+            <a class="w3-large">INFORMATION RETRIEVAL SYSTEMS</a>&nbsp;&nbsp;<a class="w3-hover-text-black" target="_blank" href="https://github.com/samanjate/IR-Project"><i class="w3-large fa fa-github"></i></a>
             <p><i>This project implements and compares different retrieval models. <span class="w3-right">Sept-Dec 2016</span></i></p>
          </div>
          <div class="w3-row">
@@ -275,7 +298,7 @@
             </div>
          </div>
          <div class="w3-padding-64 overrride-bottom-padding">
-            <a class="w3-large w3-hover-text-black" href="https://github.com/samanjate/HEFT" target="_blank">HETEROGENEOUS EARLIEST FINISH TIME</a>
+            <a class="w3-large">HETEROGENEOUS EARLIEST FINISH TIME</a>&nbsp;&nbsp;<a class="w3-hover-text-black" target="_blank" href="https://github.com/samanjate/heft"><i class="w3-large fa fa-github"></i></a>
             <p><i>This project uses an algorithm to find the optimal solution to the job scheduling problem. <span class="w3-right">Aug-Dec 2013</span></i></p>
          </div>
          <div class="w3-row">
@@ -372,18 +395,11 @@
       </div>
       <!-- Footer -->
       <footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off" id="bottom">
-         <div class="w3-section w3-hide-small">
-            <div class="w3-row">
-               <div class="w3-half">
-                  <div id="googleMap" class="w3-round-large w3-greyscale" style="width:25%;height:150px;margin-left: 72%"></div>
-               </div>
-               <div class="w3-half" style="text-align: left; margin-top: 40px">
-                  <i class="fa fa-map-marker fa-fw w3-xlarge"></i> Boston, MA<br>
-                  <i class="fa fa-phone fa-fw w3-xlarge"></i> +1 (781) 952-0303<br>
-                  <a href="mailto:sood.s@husky.neu.edu?Subject=Hello"><i class="fa fa-envelope fa-fw w3-hover-opacity w3-xlarge"></i></a> sood.s@husky.neu.edu<br>
-               </div>
-            </div>
-         </div>
+         <div class="w3-section w3-large">
+            <i class="fa fa-map-marker fa-fw w3-xlarge"></i> Boston, MA<br>
+            <i class="fa fa-phone fa-fw w3-xlarge"></i> +1 (781) 952-0303<br>
+            <a href="mailto:sood.s@husky.neu.edu?Subject=Hello"><i class="fa fa-envelope fa-fw w3-hover-opacity w3-xlarge"></i></a> sood.s@husky.neu.edu<br>
+         </div>   
          <div class="w3-xlarge w3-section w3-widest">
             <a href="https://www.facebook.com/samanjate" class="fa fa-facebook-official w3-hover-opacity" target="_blank"></a>
             <a href="https://www.instagram.com/saman.sood/" class="fa fa-instagram w3-hover-opacity" target="_blank"></a>
@@ -393,54 +409,5 @@
          </div>
          <p>Made with <i class="fa fa-heart"></i></p>
       </footer>
-      <script>
-         function myMap()
-         {
-          myCenter=new google.maps.LatLng(42.338752, -71.092398);
-          var mapOptions= {
-            center:myCenter,
-            zoom:12, scrollwheel: false, draggable: false,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
-          };
-          var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-         
-          var marker = new google.maps.Marker({
-            position: myCenter,
-          });
-          marker.setMap(map);
-         }
-         
-         // Modal Image Gallery
-         function onClick(element) {
-          document.getElementById("img01").src = element.src;
-          document.getElementById("modal01").style.display = "block";
-          var captionText = document.getElementById("caption");
-          captionText.innerHTML = element.alt;
-         }
-         
-         // Change style of navbar on scroll
-         window.onscroll = function() {myFunction()};
-         function myFunction() {
-            var navbar = document.getElementById("myNavbar");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-            } else {
-                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-            }
-         }
-         
-         // Used to toggle the menu on small screens when clicking on the menu button
-         function toggleFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-         }
-         
-      </script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCUnhTYKHuF-TXqSO_7waj6XeMwCPBeNs&callback=myMap"
-         type="text/javascript"></script>
    </body>
 </html>
