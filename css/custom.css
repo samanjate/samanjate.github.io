@@ -27,6 +27,15 @@ b {
 .tiny-text {
     font-size: 10px;
 }
+.file-text { margin-top: .6em; }
+.resume-icon {
+    color: #ef7140;
+}
+.resume-icon-text {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
