@@ -27,7 +27,7 @@
       }
       /* First image (Logo. Full height) */
       .bgimg-1 {
-      background-image: url('pictures/nyc.jpg');
+      background-image: url('pictures/seattle.jpg');
       min-height: 100%;
       }
       /* Second image (Portfolio) */
@@ -53,7 +53,7 @@
       $(function(){
       
           $("#typed").typed({
-              strings: ["Hello! I'm Samanjate Sood.", "I'm a CS grad, NEU.", "I specialize in Software Engg and Db Mgmnt.", "I've also studied AI and Web Dev.", "Hello! I'm Samanjate Sood."],
+              strings: ["Hello! I'm Samanjate Sood.", "I'm a Senior Software Engineer at Charles River Development.", "I graduated with a Master's in CS from NEU in 2018.", "I specialize in Software Engineering and Database Management.", "I've also studied AI and Web Dev.", "Hello! I'm Samanjate Sood."],
               typeSpeed: 30,
         callback: function(){
           shift();
@@ -148,8 +148,8 @@
             </a>
             <a href="#home" class="w3-bar-item w3-button">HOME</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-briefcase"></i> EXPERIENCE</a>
+            <a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-briefcase"></i> EXPERIENCE</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
             <a href="#bottom" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
             <i class="fa fa-arrow-down"></i>
             </a>
@@ -157,8 +157,8 @@
          <!-- Navbar on small screens -->
          <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+            <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+            <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
             <a href="#bottom" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
          </div>
       </div>
@@ -206,7 +206,7 @@
          </div>
          <div class="w3-padding-64 overrride-bottom-padding">
             <h3 class="w3-center">EDUCATION</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Northeastern_University_seal.svg/1200px-Northeastern_University_seal.svg.png" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
+            <img src="logo/neu.png" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
             <a href="http://www.northeastern.edu/" class="w3-large w3-hover-text-black" target="_blank">NORTHEASTERN UNIVERSITY</a><span class="w3-right w3-margin-top w3-hide-small">Boston, MA</span>
          </div>
          <div>
@@ -217,7 +217,7 @@
             </p>
          </div>
          <div class="w3-padding-16 overrride-bottom-padding">
-            <img src="https://upload.wikimedia.org/wikipedia/en/7/75/Logo_of_UIET%2CPanjab_University.jpg" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
+            <img src="logo/uiet.png" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
             <a href="http://www.uiet.puchd.ac.in/" class="w3-large w3-hover-text-black" target="_blank">UIET, PANJAB UNIVERSITY</a><span class="w3-right w3-margin-top w3-hide-small">Chandigarh, India</span>
          </div>
          <div>
@@ -226,37 +226,113 @@
                Favourite Subjects: Analysis and Design of Algorithms, Data Structures, Database Management Systems, Object Oriented Programming, Programming Fundamentals, Software Engineering, Software Testing &amp; Quality Assurance, and Web Technologies.
             </p>
          </div>
-         <div class="w3-padding-16 overrride-bottom-padding">
-            <h3 class="w3-center">SKILLS</h3>
-            <p class="w3-wide"><i class="fa fa-cogs"></i>Software Engineering</p>
-            <div class="w3-light-grey">
-               <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%"></div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-laptop"></i>Web Development</p>
-            <div class="w3-light-grey">
-               <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%"></div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-flask"></i>Algorithms</p>
-            <div class="w3-light-grey">
-               <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%"></div>
-            </div>
+      </div>
+      <!-- Third Parallax Image with Portfolio Text -->
+      <div class="bgimg-3 w3-display-container w3-opacity-min">
+         <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">EXPERIENCE</span>
          </div>
       </div>
-      <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-         <div class="w3-quarter w3-section">
-            <span class="w3-xxxlarge fa fa-coffee"></span><br>
-            Java
+      <!-- Container (Contact Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="experience">
+         <div>
+            <img src="logo/crd.png" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
+            <a href="https://www.crd.com/" class="w3-large w3-hover-text-black" target="_blank">CHARLES RIVER DEVELOPMENT</a><span class="w3-right w3-margin-top w3-hide-small">Burlington, MA</span>
          </div>
-         <div class="w3-quarter w3-section">
-            <span class="w3-xxxlarge fa fa-database"></span><br>
-            SQL / T-SQL
+         <div>
+            <p><i>Senior Software Engineer I<span class="w3-right">Mar 2021 - Present</span></i><br>
+               <i>Fixed Income Trading</i>
+            </p>
          </div>
-         <div class="w3-quarter w3-section">
-            <span class="w3-xxxlarge fa fa-code"></span><br>
-            HTML / CSS / JS
+         <div>
+            <ul>
+               <li><b>Redesigned architecture</b> to stream and <b>persist incoming inventories</b> from different sources hosted as an <b>external web application</b>.</li>
+               <li><b>Mentored new hires and interns</b> of the team to adopt to best practices and strategies for Developers.</li>
+            </ul>
          </div>
-         <div class="w3-quarter w3-section">
-            <span class="w3-xxxlarge fa fa-git"></span><br>
+         <div>
+            <p><i>Software Engineer II<span class="w3-right">Mar 2020 - Mar 2021</span></i><br>
+               <i>Fixed Income Trading</i>
+            </p>
+         </div>
+         <div>
+            <ul>
+               <li>Developed a mechanism to <b>alert</b> users when new <b>IOI data</b> of interest to them is available.</li>
+               <li>Developed a <b>Detail View</b> to show a <b>summary of IOIs</b> present in the system.</li>
+               <li>Built a <b>FIX message processor</b> to parse and persist incoming messages from a venue.</li>
+            </ul>
+         </div>
+         <div>
+            <p><i>Software Engineer I<span class="w3-right">Nov 2018 - Mar 2020</span></i><br>
+               <i>Fixed Income Trading</i>
+            </p>
+         </div>
+         <div>
+            <ul>
+               <li><b>Redesigned</b> a <b>C# thick client</b> architecture by <b>removing</b> its dependency on <b>local Java process</b> and implemented an RPC protocol between the two technologies.</li>
+               <li>Designed <b>data model</b> and <b>server APIs</b> to create and execute multiple fixed income orders as a single <b>Quote List</b>.</li>
+               <li><b>Automatically</b> capture and <b>attach</b> the <b>market data snapshot</b> upon a quote/order execution.</li>
+               <li>Added <b>Dark Theme</b> support for several <b>Fixed Income</b> views in the CRIMS application.</li>
+            </ul>
+         </div>
+         <div class="w3-padding-16 overrride-bottom-padding">
+            <img src="logo/ccis.jpeg" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
+            <a href="https://www.ccis.northeastern.edu/" class="w3-large w3-hover-text-black" target="_blank">NORTHEASTERN UNIVERSITY</a><span class="w3-right w3-margin-top w3-hide-small">Boston, MA</span>
+         </div>
+         <div>
+            <p><i>Master's Assistant, College of Computer &amp; Information Science<span class="w3-right">Jan-Apr 2018</span></i><br>
+               <i>CS3200: Database Design</i>
+            </p>
+         </div>
+         <div>
+            <ul>
+               <li><b>Grading:</b> Responsible for grading assignments and projects submitted by the students.</li>
+               <li><b>Office Hours:</b> Holding regular office hours to clarify subject related doubts and helping students with their assignments.</li>
+               <li><b>Auto Test:</b> Developed a tool to automatically test the quality of the SQL queries submitted by all the students in one run.</li>
+               <li><b>Review Session:</b> Conducted a review session to go over what had been taught in class.</li>
+            </ul>
+         </div>
+         <div class="w3-padding-16 overrride-bottom-padding">
+            <img src="logo/crd.png" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
+            <a href="https://www.crd.com/" class="w3-large w3-hover-text-black" target="_blank">CHARLES RIVER DEVELOPMENT</a><span class="w3-right w3-margin-top w3-hide-small">Burlington, MA</span>
+         </div>
+         <div>
+            <p><i>Software Engineer Co-op<span class="w3-right">Jul-Dec 2017</span></i><br>
+               <i>Fixed Income Trading</i>
+            </p>
+         </div>
+         <div>
+            <ul>
+               <li><b>Evergreen Repos:</b> Enhanced the CRIMS application functionality by adding support for Evergreen Repos.</li>
+               <li><b>Re-factoring:</b> Re-factored the CRIMS application's Java code to split client, server, and utility code to improve the system's security, performance, and the overall design of the code.</li>
+               <li><b>Source Code Analyzer:</b> Designed and developed a Java tool to parse Java code in text format to find all method invocations of a Java class from other Java classes.</li>
+               <li><b>Scripts:</b> Wrote several Python scripts for analyzing the code dependencies to help estimate effort to re-factor it.</li>
+               <li><b>Automation:</b> Developed automation tests to test the hedging workflows of the IMS application using Silk4Net.</li>
+            </ul>
+         </div>
+         <div class="w3-padding-16 overrride-bottom-padding">
+            <img src="logo/infy.png" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
+            <a href="https://www.infosys.com/" class="w3-large w3-hover-text-black" target="_blank">INFOSYS</a><span class="w3-right w3-margin-top w3-hide-small">Chandigarh, India</span>
+         </div>
+         <div>
+            <p><i>Systems Engineer<span class="w3-right">Jun 2014 - May 2016</span></i><br>
+         </div>
+         <div>
+            <ul>
+               <li><b>Site Provisioning Tool:</b> Developed a tool to automatically create and provision SharePoint sites/sub-sites.</li>
+               <li><b>Access App:</b> Created a SharePoint app that updated the user access level on the given SharePoint site/sub-site.</li>
+               <li><b>Text Replacement Tool:</b> Built an efficient tool to search and replace text for all the files in a directory.</li>
+               <li><b>Bug Estimation and Fixing:</b> Improved the overall application experience by fixing several bugs.</li>
+            </ul>
+         </div>
+         <div>
+            <p><i>Systems Engineer Intern<span class="w3-right">Feb-Jun 2014</span></i><br>
+         </div>
+         <div>
+            <ul>
+               <li><b>University Website:</b> Designed and implemented different modules of a university website including a result management system, admission application system, and class enrollment system.</li>
+               <li><b>Training:</b> Successfully completed training on Object Oriented Programming and SQL using .NET framework.</li>
+            </ul>
          </div>
       </div>
       <!-- Second Parallax Image with Portfolio Text -->
@@ -266,7 +342,7 @@
          </div>
       </div>
       <!-- Container (Portfolio Section) -->
-      <div class="w3-content w3-container w3-padding-64" id="portfolio">
+      <div class="w3-content w3-container w3-padding-64" id="projects">
       	<div>
             <a class="w3-large">MUSIC HUB</a>&nbsp;&nbsp;<a class="w3-hover-text-black" target="_blank" href="https://music-hub-app-angular.herokuapp.com/"><i class="fa fa-external-link"></i></a>
             &nbsp;<a class="w3-hover-text-black" target="_blank" href="https://github.com/samanjate/music-hub"><i class="w3-large fa fa-github"></i></a>
@@ -278,6 +354,9 @@
             </div>
             <div class="w3-col m6 w3-padding-small">
                <ul>
+                  <li>Impletemented <b>admin role</b> to create and delete site users.</li>
+                  <li>Developed <b>critic</b> users who can rate the song library and <b>artists</b> who can upload songs.</li>
+                  <li>Built server APIs to populate site with <b>latest songs</b> using 3rd party provider.</li>
                   <li>Built with Spring Boot, JPA, and Angular 6.</li>
                </ul>
             </div>
@@ -391,88 +470,12 @@
             </div>
          </div>
       </div>
-      <!-- Modal for full size images on click-->
-      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-         <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
-         </div>
-      </div>
-      <!-- Third Parallax Image with Portfolio Text -->
-      <div class="bgimg-3 w3-display-container w3-opacity-min">
-         <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">EXPERIENCE</span>
-         </div>
-      </div>
-      <!-- Container (Contact Section) -->
-      <div class="w3-content w3-container w3-padding-64" id="contact">
-         <div>
-            <img src="https://pbs.twimg.com/profile_images/892411215380664320/DDgHeBb1_400x400.jpg" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
-            <a href="https://www.ccis.northeastern.edu/" class="w3-large w3-hover-text-black" target="_blank">NORTHEASTERN UNIVERSITY</a><span class="w3-right w3-margin-top w3-hide-small">Boston, MA</span>
-         </div>
-         <div>
-            <p><i>Master's Assistant, College of Computer &amp; Information Science<span class="w3-right">Jan-Apr 2018</span></i><br>
-               <i>CS3200: Database Design</i>
-            </p>
-         </div>
-         <div>
-            <ul>
-               <li><b>Grading:</b> Responsible for grading assignments and projects submitted by the students.</li>
-               <li><b>Office Hours:</b> Holding regular office hours to clarify subject related doubts and helping students with their assignments.</li>
-               <li><b>Auto Test:</b> Developed a tool to automatically test the quality of the SQL queries submitted by all the students in one run.</li>
-               <li><b>Review Session:</b> Conducted a review session to go over what had been taught in class.</li>
-            </ul>
-         </div>
-         <div class="w3-padding-16 overrride-bottom-padding">
-            <img src="http://www.bobsguide.com/logos/c4027.jpg" style="width: 48px;height: 48px"></img>&nbsp;&nbsp;
-            <a href="https://www.crd.com/" class="w3-large w3-hover-text-black" target="_blank">CHARLES RIVER DEVELOPMENT</a><span class="w3-right w3-margin-top w3-hide-small">Burlington, MA</span>
-         </div>
-         <div>
-            <p><i>Software Engineer Co-op<span class="w3-right">Jul-Dec 2017</span></i><br>
-               <i>Fixed Income Trading</i>
-            </p>
-         </div>
-         <div>
-            <ul>
-               <li><b>Evergreen Repos:</b> Enhanced the CRIMS application functionality by adding support for Evergreen Repos.</li>
-               <li><b>Re-factoring:</b> Re-factored the CRIMS application's Java code to split client, server, and utility code to improve the system's security, performance, and the overall design of the code.</li>
-               <li><b>Source Code Analyzer:</b> Designed and developed a Java tool to parse Java code in text format to find all method invocations of a Java class from other Java classes.</li>
-               <li><b>Scripts:</b> Wrote several Python scripts for analyzing the code dependencies to help estimate effort to re-factor it.</li>
-               <li><b>Automation:</b> Developed automation tests to test the hedging workflows of the IMS application using Silk4Net.</li>
-            </ul>
-         </div>
-         <div class="w3-padding-16 overrride-bottom-padding">
-            <img src="https://www.infosys.com/SiteCollectionImages/media-resources/infosys-logo-PNG.png" style="width: 48px;height: 18.6px"></img>&nbsp;&nbsp;
-            <a href="https://www.infosys.com/" class="w3-large w3-hover-text-black" target="_blank">INFOSYS</a><span class="w3-right w3-margin-top w3-hide-small">Chandigarh, India</span>
-         </div>
-         <div>
-            <p><i>Systems Engineer<span class="w3-right">Jun 2014 - May 2016</span></i><br>
-         </div>
-         <div>
-            <ul>
-               <li><b>Site Provisioning Tool:</b> Developed a tool to automatically create and provision SharePoint sites/sub-sites.</li>
-               <li><b>Access App:</b> Created a SharePoint app that updated the user access level on the given SharePoint site/sub-site.</li>
-               <li><b>Text Replacement Tool:</b> Built an efficient tool to search and replace text for all the files in a directory.</li>
-               <li><b>Bug Estimation and Fixing:</b> Improved the overall application experience by fixing several bugs.</li>
-            </ul>
-         </div>
-         <div>
-            <p><i>Systems Engineer Intern<span class="w3-right">Feb-Jun 2014</span></i><br>
-         </div>
-         <div>
-            <ul>
-               <li><b>University Website:</b> Designed and implemented different modules of a university website including a result management system, admission application system, and class enrollment system.</li>
-               <li><b>Training:</b> Successfully completed training on Object Oriented Programming and SQL using .NET framework.</li>
-            </ul>
-         </div>
-      </div>
       <!-- Footer -->
       <footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off" id="bottom">
          <div class="w3-section w3-large">
             <i class="fa fa-map-marker fa-fw w3-xlarge"></i> Boston, MA<br>
             <i class="fa fa-phone fa-fw w3-xlarge"></i> +1 (781) 952-0303<br>
-            <a href="mailto:sood.s@husky.neu.edu?Subject=Hello"><i class="fa fa-envelope fa-fw w3-hover-opacity w3-xlarge"></i></a> sood.s@husky.neu.edu<br>
+            <a href="mailto:sood.s@husky.neu.edu?Subject=Hello"><i class="fa fa-envelope fa-fw w3-hover-opacity w3-xlarge"></i></a> samanjate@gmail.com<br>
          </div>   
          <div class="w3-xlarge w3-section w3-widest">
             <a href="https://www.facebook.com/samanjate" class="fa fa-facebook-official w3-hover-opacity" target="_blank"></a>
